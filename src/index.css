@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@theme{
+  --color-brand-header : oklch(0.6774 0.1119 237.65) ;
+  --color-brand-colour-primary: oklch(0.7359 0.1707 130.37) ;
+  --color-paragraph-text: oklch(0.3687 0.0014 17.22);
+}
+
+@layer components{
+
+  .service-header{
+      @apply text-2xl font-bold mb-3 text-brand-header
+  }
+  .flex-container{
+      @apply flex items-center justify-between 
+  }
+  .flex-container-responsive{
+      @apply flex flex-col items-start md:flex-row md:items-center md:justify-between
+  }
+  .smooth-transition{
+      @apply duration-300 ease-in-out transition-all
+  }
+}
