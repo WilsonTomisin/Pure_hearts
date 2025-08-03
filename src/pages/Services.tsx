@@ -138,11 +138,8 @@ const Services = () => {
           package. The staff assigned to your care will be carefully selected to ensure they meet
           your specific requirements.
         </p>
-          </div>
-          
-          <div className=' my-10'>
-              <img src={serviceFooterimg} alt=" serivces footer image" />
-          </div>
+      </div>
+  
     </div>
   )
 }

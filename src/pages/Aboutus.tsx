@@ -1,8 +1,13 @@
-import React from 'react';
 import card1 from '../assets/cardimg1.png';
 import card2 from '../assets/cardimg2.png';
 import card3 from '../assets/cardimg3.png';
-import careImg from "../assets/TJQVMX3 (1).png"
+import careImg from "../assets/TJQVMX3 (1).png";
+import coreImg1 from "../assets/Frame 107 (1).png";
+import coreImg2 from "../assets/Frame 107 (1).png";
+import coreImg3 from "../assets/Frame 109.png";
+import coreImg4 from "../assets/Frame 109 (1).png";
+import serviceFooterimg from '../assets/Group 16.png'
+
 
 const Aboutus = () => {
   return (
@@ -10,7 +15,7 @@ const Aboutus = () => {
       <main className=" grid grid-cols-2 gap-5">
         <div></div>
         <div className=" p-7 bg-brand-colour-primary text-white">
-          <h2 className=" text-3xl font-bold mb-4">ABOUT US</h2>
+          <h2 className=" text-3xl font-bold mb-4 header-font">ABOUT US</h2>
           <p className=" mb-3">
             Our focus is on delivering exceptional care within the familiar surroundings of our
             clients' homes. Whether through our domiciliary care services, where our professionals
@@ -85,17 +90,17 @@ const Aboutus = () => {
       </div>
 
       <div className="my-4 text-center">
-        <h1 className=" text-brand-colour-primary text-3xl font-semibold">Our Core Values </h1>
+        <h1 className="  text-brand-colour-primary text-3xl font-semibold">Our Core Values </h1>
         <p className=" ">
           At pure hearts we pay attention to your needs and are guided by our core values
         </p>
       </div>
 
-      <div className=" my-7 bg-brand-colour-primary italic p-5 grid grid-cols-2 gap-5 items-center justify-between">
-        <div>
-          <img src="" alt="" />
+      <div className=" py-7 rounded-2xl my-7 bg-brand-colour-primary italic px-5 grid grid-cols-2 gap-5 items-center justify-between">
+        <div className=" flex items-center gap-4">
+          <img src={coreImg1} alt=" placeholder" />
           <div className=" text-white">
-            <h4 className=" text-3xl font-semibold ">QUALITY</h4>
+            <h4 className=" text-brand-header text-3xl font-semibold ">QUALITY</h4>
             <p>
               Quality health care support is crucial for ensuring effective patient care. This
               informs the service that we provide AT Pure heart solution.
@@ -103,10 +108,10 @@ const Aboutus = () => {
           </div>
         </div>
 
-        <div className=" text-white">
-          <img src="" alt="" />
+        <div className=" flex items-center gap-4 text-white">
+          <img src={coreImg2} alt=" placeholder " />
           <div>
-            <h4 className=" text-3xl font-semibold ">COMMITMENT</h4>
+            <h4 className=" text-brand-header text-3xl font-semibold ">COMMITMENT</h4>
             <p>
               Commited to ensuring equitable access to medical care, prioritizing inclusivity and
               advaocating for policies that bridge healthcare gaps for all.
@@ -114,10 +119,10 @@ const Aboutus = () => {
           </div>
         </div>
 
-        <div className=' text-white'>
-          <img src="" alt="" />
+        <div className=" flex items-center gap-4 text-white">
+          <img src={coreImg3} alt=" placeholder" />
           <div>
-            <h4 className=" text-3xl font-semibold ">PERFORMANCE</h4>
+            <h4 className=" text-brand-header text-3xl font-semibold ">PERFORMANCE</h4>
             <p>
               At Pure heart solution we lead commendable performance, consistently prioritizing
               patient care and utilizing innovative solutions to enhance healthcare accessibility.
@@ -125,10 +130,10 @@ const Aboutus = () => {
           </div>
         </div>
 
-        <div className=' text-white'>
-          <img src="" alt="" />
+        <div className=" flex items-center gap-4 text-white">
+          <img src={coreImg4} alt=" placeholder" />
           <div>
-            <h4 className=" text-3xl font-semibold ">SAFETY</h4>
+            <h4 className=" text-brand-header text-3xl font-semibold ">SAFETY</h4>
             <p>
               At Pure Heart solutions we focus on safety, implementing rigorous protocols and state
               of the art measures to ensure a secure environment for both patient and staff.
@@ -136,6 +141,8 @@ const Aboutus = () => {
           </div>
         </div>
       </div>
+
+ 
     </section>
   )
 }
