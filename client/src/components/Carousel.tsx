@@ -2,39 +2,45 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import image1 from '../assets/Group 19.png';
-import image2 from '../assets/Group 591.png'
+import image2 from '../assets/Group 591.png';
+import image3 from '../assets/image 9.png';
+import image4 from '../assets/image 18.png';
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const images = [
     {
       url: image1,
-      title: 'Mountain Peak Adventure',
+      headerTitle: 'Welcome to  Pure hearts solutions',
+      title: 'We Are Here to provide for Your ',
       subtitle: 'Discover breathtaking views at sunrise',
       description:
         "At Pure Hearts Solutions, we are dedicated to redefining healthcare staffing with a focus on personalized care and unwavering professionalism. Whether you're a healthcare provider seeking staffing solutions or a passionate professional looking for meaningful opportunities, you're in the right place. Explore our services, meet our dedicated team, and discover how Pure Hearts Solutions is shaping the future of healthcare staffing.  ",
     },
     {
       url: image2,
-      title: 'Tranquil Lake Reflection',
-      subtitle: 'Perfect mirror of nature',
+      headerTitle: 'Welcome to  Pure hearts solutions',
+      title: 'We Are Here to provide for Your ',
+      subtitle: 'Pure Hearts Solutions – Your Trusted Partner in Healthcare',
       description:
-        'Where sky meets water in perfect harmony, creating moments of pure tranquility.',
+        "At Pure Hearts Solutions, we are dedicated to redefining healthcare staffing with a focus on personalized care and unwavering professionalism. Whether you're a healthcare provider seeking staffing solutions or a passionate professional looking for meaningful opportunities, you're in the right place. Explore our services, meet our dedicated team, and discover how Pure Hearts Solutions is shaping the future of healthcare staffing.  ",
     },
     {
-      url: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=500&fit=crop',
-      title: 'Forest Path Journey',
-      subtitle: 'Into the heart of wilderness',
-      description: 'Follow winding trails through ancient forests filled with mystery and wonder.',
+      url: image3,
+      headerTitle: 'Welcome to  Pure hearts solutions',
+      title: 'We Are Here to provide for Your ',
+      subtitle: 'Pure Hearts Solutions – Your Trusted Partner in Healthcare',
+      description:
+        "At Pure Hearts Solutions, we are dedicated to redefining healthcare staffing with a focus on personalized care and unwavering professionalism. Whether you're a healthcare provider seeking staffing solutions or a passionate professional looking for meaningful opportunities, you're in the right place. Explore our services, meet our dedicated team, and discover how Pure Hearts Solutions is shaping the future of healthcare staffing.",
     },
     {
-      url: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=800&h=500&fit=crop',
-      title: 'Ocean Sunset Bliss',
-      subtitle: 'Where day meets night',
-      description: 'Watch as the sun paints the sky in brilliant colors over endless ocean waves.',
+      url: image4,
+      headerTitle: 'Welcome to  Pure hearts solutions',
+      title: 'We Are Here to provide for Your ',
+      subtitle: 'Pure Hearts Solutions – Your Trusted Partner in Healthcare',
+      description: "At Pure Hearts Solutions, we are dedicated to redefining healthcare staffing with a focus on personalized care and unwavering professionalism. Whether you're a healthcare provider seeking staffing solutions or a passionate professional looking for meaningful opportunities, you're in the right place. Explore our services, meet our dedicated team, and discover how Pure Hearts Solutions is shaping the future of healthcare staffing.",
     },
   ]
-
   const nextImage = () => {
     setCurrentIndex(prevIndex => (prevIndex + 1) % images.length)
   }
@@ -48,9 +54,9 @@ const Carousel = () => {
   }
 
   return (
-    <div className="relative w-full -top-32  mx-auto bg-black rounded-2xl overflow-hidden shadow-2xl">
+    <div className="relative w-full -top-40  mx-auto bg-black rounded-2xl overflow-hidden shadow-2xl">
       {/* Main carousel container */}
-      <div className="relative h-96 md:h-[600px] overflow-hidden">
+      <div className="relative h-96 md:h-[700px] overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -74,15 +80,23 @@ const Carousel = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white"
+              className="absolute top-1/2 -translate-y-1/2 left-0 right-0 p-6 md:p-8 text-white"
             >
+              <motion.h4
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+                className="text-xl md:text-2xl text-brand-colour-primary font-bold mb-2 leading-tight"
+              >
+                {images[currentIndex].headerTitle}
+              </motion.h4>
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className="text-2xl md:text-4xl font-bold mb-2 leading-tight"
+                className={`text-2xl md:text-4xl font-bold mb-2 leading-tight  rounded-2xl `}
               >
-                {images[currentIndex].title}
+                {images[currentIndex].title} <span className='text-brand-colour-primary'>Health needs</span>
               </motion.h2>
 
               <motion.p
@@ -98,7 +112,7 @@ const Carousel = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
-                className="text-sm md:text-base text-gray-300 max-w-2xl leading-relaxed"
+                className="text-sm md:text-base text-gray-300 font-light max-w-2xl leading-relaxed"
               >
                 {images[currentIndex].description}
               </motion.p>

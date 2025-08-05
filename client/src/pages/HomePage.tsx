@@ -17,10 +17,10 @@ import Carousel from '../components/Carousel';
 const HomePage = () => {
   return (
     <div>
-      <section className=" relative">
+      <section className="">
         <Carousel />
       </section>
-      <section className=" bg-slate-200 py-7 px-10 grid grid-cols-3 gap-5">
+      <section className=" bg-slate-50 h-[400px] py-7  px-10 grid grid-cols-3 gap-5">
         <div className=" flex items-center gap-2 shadow-md shadow-brand-colour-primary bg-brand-header/30 hover:bg-[#1A89D2] ease-in-out duration-500 transition-all p-4 rounded-2xl">
           <span className=" p-1 bg-brand-colour-primary/30  rounded-full">
             {' '}
@@ -166,7 +166,7 @@ const HomePage = () => {
               return (
                 <>
                   <div
-                    className="  p-7 bg-brand-header rounded-2xl hover:bg-[#1A89D2] hover:text-white transition-all ease-in-out duration-700 "
+                    className="  p-7 bg-brand-header rounded-2xl hover:scale-95 hover:bg-[#1A89D2] hover:text-white transition-all ease-in-out duration-700 "
                     key={idx}
                   >
                     <p className=" w-fit rounded-full p-5 text-xl font-bold bg-brand-colour-primary/20 text-brand-colour-primary">
@@ -188,7 +188,7 @@ const HomePage = () => {
             }
             return (
               <div
-                className=" bg-brand-header p-7 rounded-2xl hover:bg-[#1A89D2] hover:text-white transition-all ease-in-out duration-700 "
+                className=" bg-brand-header p-7 rounded-2xl hover:scale-95 hover:bg-[#1A89D2] hover:text-white transition-all ease-in-out duration-700 "
                 key={idx}
               >
                 <p className=" w-fit rounded-full p-5 text-xl font-bold  bg-brand-colour-primary/20 text-brand-colour-primary">
@@ -263,20 +263,20 @@ const HomePage = () => {
           </p>
         </main>
 
-        <section className=" grid grid-cols-2 items-center justify-between">
+        <section className=" grid grid-cols-2  justify-between">
           <div>
-            <img src={domicillarycare} className="  " alt=" " />
+            <img src={domicillarycare} className=" h-full  " alt=" " />
           </div>
-          <div className=" space-y-20">
-            <div>
-              <img src={domicillarycare2} className=" h-[120px] w-full" alt="" />
-              <h4>Senior Support worker</h4>
-              <p>Providing professional support for both staff and client</p>
+          <div className=" flex flex-col  items-center justify-center space-y-10">
+            <div className=' w-[450px]'>
+              <img src={domicillarycare2} className=" h-[220px]" alt="" />
+              <h4 className=' text-xl font-bold my-1'>Senior Support worker</h4>
+              <p className=' font-light'>Providing professional support for both staff and client</p>
             </div>
-            <div>
-              <img src={domicillarycare3} className=" h-[120px] w-full" alt="" />
-              <h4>PBS Partner</h4>
-              <p>Providing spacialised training and monitoring for support workers </p>
+            <div className=' w-[450px]'>
+              <img src={domicillarycare3} className=" h-[220px] " alt="" />
+              <h4 className=' text-xl font-bold my-1'>PBS Partner</h4>
+              <p className=' font-light'>Providing spacialised training and monitoring for support workers </p>
             </div>
           </div>
         </section>
@@ -288,7 +288,7 @@ const HomePage = () => {
         </h1>
 
         <section className=" grid grid-cols-3 gap-5 justify-between">
-          <div className=" h-[450px] flex flex-col justify-between bg-gradient-to-bl from-white via-brand-colour-primary to-accent-foreground p-7 rounded-2xl">
+          <div className=" h-[450px] flex flex-col justify-between bg-white  p-7 rounded-2xl">
             <p className=" text-[#1A89D2] font-bold">
               The service I received was thoroughly impressive. The staff was friendly and
               attentive, making me feel valued. The providers took the time to address all my
@@ -301,7 +301,7 @@ const HomePage = () => {
               ))}
             </span>{' '}
           </div>
-          <div className=" h-[450px]  flex flex-col justify-between bg-gradient-to-bl from-white via-brand-colour-primary to-accent-foreground p-7 rounded-2xl">
+          <div className=" h-[450px]  flex flex-col justify-between bg-white  p-7 rounded-2xl">
             <p className=" text-[#1A89D2] font-bold">
               Pure Hearts Solutions has been a game-changer for our care facility. The caregivers
               they provide not only excel in professionalism and skills but also bring genuine
