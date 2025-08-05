@@ -1,6 +1,8 @@
 import serviceimg1 from '../assets/image.png';
-import serviceFooterimg from '../assets/Group 16.png'
-
+import serviceimg2 from '../assets/image 9.png';
+import serviceimg3 from '../assets/image 18.png'
+import serviceimg4 from '../assets/image 16.png';
+import serviceimg5 from '../assets/image 13.png'
 
 const Services = () => {
   return (
@@ -25,7 +27,11 @@ const Services = () => {
 
       <section className=" grid grid-cols-2 gap-5 justify-between my-22">
         <div className="">
-          <img src={serviceimg1} alt="image 1" />
+          <img
+            src={serviceimg2}
+            alt="image 1"
+            className=" rounded-2xl shadow-xl shadow-[#1A89D2]"
+          />
         </div>
         <div className="">
           <h3 className=" service-header">Live in care </h3>
@@ -46,13 +52,21 @@ const Services = () => {
           </p>
         </div>
         <div className="">
-          <img src={serviceimg1} alt="image 1" />
+          <img
+            src={serviceimg3}
+            alt="image 1"
+            className=" rounded-2xl shadow-xl shadow-[#1A89D2]"
+          />
         </div>
       </section>
 
       <section className=" grid grid-cols-2 gap-5 justify-between my-22">
         <div className="">
-          <img src={serviceimg1} alt="image 1" />
+          <img
+            src={serviceimg4}
+            alt="image 1"
+            className=" rounded-2xl shadow-xl shadow-[#1A89D2]"
+          />
         </div>
 
         <div className="">
@@ -77,7 +91,11 @@ const Services = () => {
         </div>
 
         <div className="">
-          <img src={serviceimg1} alt="image 1" />
+          <img
+            src={serviceimg5}
+            alt="image 1"
+            className=" h-[450px] w-full rounded-2xl shadow-xl shadow-[#1A89D2]"
+          />
         </div>
       </section>
 
@@ -139,7 +157,6 @@ const Services = () => {
           your specific requirements.
         </p>
       </div>
-  
     </div>
   )
 }
