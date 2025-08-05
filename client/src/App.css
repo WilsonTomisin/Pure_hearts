@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+
+
+*{  
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.header-font{
+  font-family: "Yeseva One", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.nav-link{
+  position: relative;
+
+}
+.nav-link::after{
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  height: 2px;
+  width: 0%;
+  /* background-image:oklch(0.7359 0.1707 130.37)  ; */
+  background-color:oklch(0.7359 0.1707 130.37) ;
+  transition: all 400ms ease-in-out;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+  color: black;
+}
