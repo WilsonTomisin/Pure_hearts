@@ -1,51 +1,34 @@
 import  { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
-import member1 from '../assets/WhatsApp Image 2025-07-22 at 13.56.03_c8d6587f.jpg'
+import member3 from '../assets/WhatsApp Image 2025-07-22 at 13.56.03_c8d6587f.jpg'
 import member2 from '../assets/WhatsApp Image 2025-07-22 at 13.56.03_e4a3a4bf.jpg';
-import member3 from "../assets/WhatsApp Image 2025-07-22 at 13.56.04_26bcf26f.jpg"
+import member1 from "../assets/WhatsApp Image 2025-07-22 at 13.56.04_26bcf26f.jpg"
 
 const teamMembers = [
   {
     id: 1,
-    name: 'Anderson',
-    role: 'CEO and Founder',
+    name: 'Michael Adodo. ',
+    role: 'Chief Executive Officer. CEO',
     image: member1,
     description:
       'Dedicated healthcare professional with 15+ years of experience leading innovative healthcare solutions.',
   },
   {
     id: 2,
-    name: 'Sarah Johnson',
-    role: 'Head of Nursing',
-    image:member2,
+    name: 'Johnson Ajuwon.',
+    role: 'Chief Financial Officer  CFO',
+    image: member2,
     description:
       'Experienced nurse practitioner committed to providing exceptional patient care and team leadership.',
   },
   {
     id: 3,
-    name: 'Michael Chen',
-    role: 'Operations Director',
+    name: 'Abubakri Otegbeye.  ',
+    role: 'Registered Manager ',
     image: member3,
     description:
       'Strategic operations leader focused on optimizing healthcare delivery and organizational efficiency.',
-  },
-//   {
-//     id: 4,
-//     name: 'Dr. Emily Rodriguez',
-//     role: 'Medical Specialist',
-//     image:
-//       'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=500&fit=crop&crop=face',
-//     description:
-//       'Specialist physician dedicated to advancing patient outcomes through evidence-based care.',
-//   },
-//   {
-//     id: 5,
-//     name: 'James Wilson',
-//     role: 'Support Coordinator',
-//     image:
-//       'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&crop=face',
-//     description: 'Patient advocate ensuring seamless coordination of care and support services.',
-//   },
+  }
 ]
 
 const TeamSlider = () => {

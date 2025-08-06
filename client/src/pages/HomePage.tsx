@@ -1,20 +1,22 @@
-import { CopyPlus, History, MoveRight, Star, User } from 'lucide-react'
+import { CopyPlus, History, MoveRight, User } from 'lucide-react'
 import image1 from '../assets/TJQVMX3 (2).png';
 import image2 from '../assets/video.png'
 import { servicesCardInfo } from '../utils/constants';
-import teamMember1 from "../assets/WhatsApp Image 2025-07-22 at 13.56.03_c8d6587f.jpg"
+import teamMember3 from "../assets/WhatsApp Image 2025-07-22 at 13.56.03_c8d6587f.jpg"
 import teamMember2 from "../assets/WhatsApp Image 2025-07-22 at 13.56.03_e4a3a4bf.jpg";
-import teamMember3 from "../assets/WhatsApp Image 2025-07-22 at 13.56.04_26bcf26f.jpg";
+import teamMember1 from "../assets/WhatsApp Image 2025-07-22 at 13.56.04_26bcf26f.jpg";
 import domicillarycare from "../assets/card-highlight (1).png";
 import domicillarycare2 from "../assets/image (2).png";
 import domicillarycare3 from "../assets/image (3).png";
 import { FaStar } from 'react-icons/fa6'
 import Carousel from '../components/Carousel';
+import { useNavigate } from 'react-router-dom';
 
 
 
 
 const HomePage = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <section className="">
@@ -72,7 +74,7 @@ const HomePage = () => {
             <div className="  p-4">
               <div className=" w-fit p-1 bg-brand-colour-primary/30  rounded-full">
                 {' '}
-                <User size={40} className="text-brand-colour-primary  " /> 
+                <User size={40} className="text-brand-colour-primary  " />
               </div>
               <div>
                 <h2 className=" font-semibold">Mission</h2>
@@ -80,8 +82,9 @@ const HomePage = () => {
               </div>
             </div>
             <div className="  p-4">
-              <div className=" w-fit p-1 bg-brand-colour-primary/30  rounded-full">{' '}
-              <CopyPlus size={40} className="text-brand-colour-primary  " />
+              <div className=" w-fit p-1 bg-brand-colour-primary/30  rounded-full">
+                {' '}
+                <CopyPlus size={40} className="text-brand-colour-primary  " />
               </div>
               <div>
                 <h2 className=" font-semibold">Vision</h2>
@@ -201,7 +204,7 @@ const HomePage = () => {
           })}
         </div>
         <p className=" my-5">
-          <span className=" flex items-center justify-center gap-2 text-brand-colour-primary text-lg">
+          <span className=" cursor-pointer flex items-center justify-center gap-2 text-brand-colour-primary text-lg">
             Learn More <MoveRight />
           </span>
         </p>
@@ -224,8 +227,8 @@ const HomePage = () => {
               alt=" team member 1"
             />
             <div className=" text-center mt-2">
-              <h4 className=" text-xl text-brand-colour-primary font-semibold">John Smith</h4>
-              <p>lorem</p>
+              <h4 className=" text-xl text-brand-colour-primary font-semibold">Michael Adodo.</h4>
+              <p>Chief Executive Officer. CEO</p>
             </div>
           </div>
           <div>
@@ -235,8 +238,8 @@ const HomePage = () => {
               alt=" team member 2"
             />{' '}
             <div className=" text-center mt-2">
-              <h4 className=" text-xl text-brand-colour-primary font-semibold">John Smith</h4>
-              <p>lorem</p>
+              <h4 className=" text-xl text-brand-colour-primary font-semibold">Johnson Ajuwon</h4>
+              <p>Chief Financial Officer CFO</p>
             </div>
           </div>
           <div>
@@ -247,10 +250,18 @@ const HomePage = () => {
             />{' '}
             <div className=" text-center mt-2">
               <h4 className=" text-xl text-brand-colour-primary font-semibold">John Smith</h4>
-              <p>lorem</p>
+              <p>Registered Manager</p>
             </div>
           </div>
         </section>
+        <p className=" my-5">
+          <span
+            onClick={() => navigate('/meet-the-team')}
+            className=" cursor-pointer flex items-center justify-center gap-2 text-brand-colour-primary text-lg"
+          >
+            Learn More <MoveRight />
+          </span>
+        </p>
       </section>
 
       <section className=" px-10 py-7 space-y-5">
@@ -268,15 +279,19 @@ const HomePage = () => {
             <img src={domicillarycare} className=" h-full  " alt=" " />
           </div>
           <div className=" flex flex-col  items-center justify-center space-y-10">
-            <div className=' w-[450px]'>
+            <div className=" w-[450px]">
               <img src={domicillarycare2} className=" h-[220px]" alt="" />
-              <h4 className=' text-xl font-bold my-1'>Senior Support worker</h4>
-              <p className=' font-light'>Providing professional support for both staff and client</p>
+              <h4 className=" text-xl font-bold my-1">Senior Support worker</h4>
+              <p className=" font-light">
+                Providing professional support for both staff and client
+              </p>
             </div>
-            <div className=' w-[450px]'>
+            <div className=" w-[450px]">
               <img src={domicillarycare3} className=" h-[220px] " alt="" />
-              <h4 className=' text-xl font-bold my-1'>PBS Partner</h4>
-              <p className=' font-light'>Providing spacialised training and monitoring for support workers </p>
+              <h4 className=" text-xl font-bold my-1">PBS Partner</h4>
+              <p className=" font-light">
+                Providing spacialised training and monitoring for support workers{' '}
+              </p>
             </div>
           </div>
         </section>

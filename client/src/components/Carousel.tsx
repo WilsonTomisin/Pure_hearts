@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import image1 from '../assets/Group 19.png';
@@ -7,7 +7,7 @@ import image3 from '../assets/image 9.png';
 import image4 from '../assets/image 18.png';
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
-
+    const interval = 4000
   const images = [
     {
       url: image1,
@@ -40,7 +40,17 @@ const Carousel = () => {
       subtitle: 'Pure Hearts Solutions – Your Trusted Partner in Healthcare',
       description: "At Pure Hearts Solutions, we are dedicated to redefining healthcare staffing with a focus on personalized care and unwavering professionalism. Whether you're a healthcare provider seeking staffing solutions or a passionate professional looking for meaningful opportunities, you're in the right place. Explore our services, meet our dedicated team, and discover how Pure Hearts Solutions is shaping the future of healthcare staffing.",
     },
-  ]
+    ]
+    
+    useEffect(() => {
+
+        const autoplay = setInterval(() => {
+          nextImage()
+        }, interval)
+
+        return () => clearInterval(autoplay)
+    }, [currentIndex, interval])
+    
   const nextImage = () => {
     setCurrentIndex(prevIndex => (prevIndex + 1) % images.length)
   }
