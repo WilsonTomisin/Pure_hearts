@@ -12,10 +12,9 @@ import serviceFooterimg from '../assets/Group 16.png'
 const Aboutus = () => {
   return (
     <section className=" px-10">
-      <main className=" grid grid-cols-2 gap-5">
-        <div></div>
-        <div className=" p-7 bg-brand-colour-primary text-white">
-          <h2 className=" text-3xl font-bold mb-4 header-font">ABOUT US</h2>
+      <main className=" grid grid-cols-1 gap-5">
+        <div className=" p-7 bg-brand-colour-primary text-white rounded-2xl">
+          <h2 className=" text-3xl font-bold mb-4 header-font text-center">ABOUT US</h2>
           <p className=" mb-3">
             Our focus is on delivering exceptional care within the familiar surroundings of our
             clients' homes. Whether through our domiciliary care services, where our professionals

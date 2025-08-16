@@ -37,8 +37,9 @@ const Careers = () => {
       <section className=" flex items-center justify-between">
         <div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet veniam fugiat quibusdam
-            voluptas obcaecati modi iure ipsum, praesentium commodi totam!
+            we are committed to raising the standard of care and support within the disability and
+            social services sector through the delivery of expert-led, person-centred training and
+            continuous workforce development.
           </p>
           <button
             onClick={() => navigate('/apply')}
@@ -55,8 +56,9 @@ const Careers = () => {
         <div>
           {' '}
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet veniam fugiat quibusdam
-            voluptas obcaecati modi iure ipsum, praesentium commodi totam!
+            We provide specialised training programs tailored specifically for support workers,
+            focusing on Positive Behaviour Support (PBS), trauma-informed care, communication
+            strategies, and best practices in supporting individuals with complex needs.
           </p>
           <button
             onClick={() => navigate('/apply')}

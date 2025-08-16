@@ -249,7 +249,9 @@ const HomePage = () => {
               alt="team member 3"
             />{' '}
             <div className=" text-center mt-2">
-              <h4 className=" text-xl text-brand-colour-primary font-semibold">John Smith</h4>
+              <h4 className=" text-xl text-brand-colour-primary font-semibold">
+                Abubakri Otegbeye
+              </h4>
               <p>Registered Manager</p>
             </div>
           </div>

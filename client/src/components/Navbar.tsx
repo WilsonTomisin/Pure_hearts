@@ -12,9 +12,12 @@ const Navbar = () => {
     { name:"Faqs", path:"/faqs"}
   ]
   return (
-    <nav className=' relative z-50'>
+    <nav className=" relative z-50">
       <div className=" w-full bg-transparent flex items-center justify-between p-7 text-brand-colour-primary ">
-        <img src={logo} alt="pure hearts logo" className=" h-20 w-48" />
+        <Link to={'/'}>
+          {' '}
+          <img src={logo} alt="pure hearts logo" className=" h-20 w-48" />
+        </Link>
         <ul className=" flex items-center justify-center gap-x-5 font-medium text-xl ">
           {navlinks.map((link, index) => {
             return (
