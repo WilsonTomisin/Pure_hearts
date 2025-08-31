@@ -1,18 +1,15 @@
 import { Link } from 'react-router-dom'
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from './ui/sheet'
+import { CiMenuFries } from 'react-icons/ci'
 
 const MobileNav = ({ Links}:{ Links:Record<string, string>[]}) => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <button>Open</button>
+        <CiMenuFries size={30}/>
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle>Edit profile</SheetTitle>
-          {/* <SheetDescription>
-            Make changes to your profile here. Click save when you&apos;re done.
-          </SheetDescription> */}
         </SheetHeader>
         <div className="grid flex-1 auto-rows-min gap-6 px-4">
           {Links.map(link => {

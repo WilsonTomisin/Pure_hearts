@@ -7,7 +7,7 @@ import domicillarycare2 from "../assets/image (2).png";
 import domicillarycare3 from "../assets/image (3).png";
 import { FaStar } from 'react-icons/fa6'
 import Carousel from '../components/Carousel';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import AboutTeam from '../components/AboutTeam';
 
 
@@ -16,7 +16,7 @@ import AboutTeam from '../components/AboutTeam';
 const HomePage = () => {
   const navigate = useNavigate()
   return (
-    <div>
+    <div className=" ">
       <section className="">
         <Carousel />
       </section>
@@ -51,14 +51,14 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className=" flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-5 md:px-10 py-7">
+      <section className=" relative top-24 md:top-0 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-5 md:px-10 py-7">
         <div className=" flex flex-col md:flex-row items-center gap-5 lg:max-w-1/2">
           <img src={image1} alt="" className=" w-[300px] h-[400px]" />
           <img src={image2} alt="" className=" w-[300px] h-[400px]" />
         </div>
         <div className=" lg:max-w-1/2">
-          <p className=" text-2xl font-medium text-brand-colour-primary">ABOUT US</p>
-          <h2 className="text-4xl font-semibold mb-4">
+          <p className=" text-lg lg:text-2xl font-medium text-brand-colour-primary">ABOUT US</p>
+          <h2 className=" text-2xl lg:text-4xl font-semibold mb-4">
             {' '}
             Pure Heart Solutions, Your Health Our Priority
           </h2>
@@ -68,7 +68,7 @@ const HomePage = () => {
             bring their expertise directly to clients within their residences, or by offering the
             comfort and support of live-in careers.
           </p>
-          <div className=" grid grid-cols-2 gap-4">
+          <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="  p-4">
               <div className=" w-fit p-1 bg-brand-colour-primary/30  rounded-full">
                 {' '}
@@ -94,9 +94,9 @@ const HomePage = () => {
       </section>
 
       <section className=" py-7 px-5 lg:px-10 space-y-14">
-        <main className=" text-center w-full  lg:w-[80%] mx-auto">
-          <p className=" text-brand-header text-2xl font-semibold">WHY CHOOSE US</p>
-          <h1 className=" text-4xl font-semibold">As a team we care about your welbeing</h1>
+        <main className=" relative top-12 md:top-0 text-center w-full  lg:w-[80%] mx-auto">
+          <p className=" text-brand-header text-lg lg:text-2xl font-semibold">WHY CHOOSE US</p>
+          <h1 className=" text-2xl lg:text-4xl font-semibold">As a team we care about your welbeing</h1>
           <p className=" text-sm font-light leading-6">
             {' '}
             At pure heart solution we provide the best care services and are committed to delivering
@@ -180,9 +180,12 @@ const HomePage = () => {
                   <div className=" bg-gradient-to-br from-[#1A89D2] to-card-foreground text-center text-white flex flex-col gap-y-5 items-center justify-center  rounded-2xl p-7">
                     <p className=" text-xl font-semibold">Emergency Call</p>
                     <p>We are always happy to provide support and assistance to everyone. </p>
-                    <button className=" px-4 py-2 rounded-3xl border border-brand-colour-primary font-semibold">
+                    <Link
+                      to={'/contact'}
+                      className=" px-4 py-2 rounded-3xl border border-brand-colour-primary font-semibold"
+                    >
                       contact us
-                    </button>
+                    </Link>
                   </div>
                 </>
               )
@@ -217,7 +220,7 @@ const HomePage = () => {
           </p>
         </main>
 
-       <AboutTeam/>
+        <AboutTeam />
         <p className=" lg:my-5">
           <span
             onClick={() => navigate('/meet-the-team')}
@@ -231,7 +234,9 @@ const HomePage = () => {
       <section className=" px-10 py-7 space-y-5">
         <main className=" text-center w-full  lg:w-[60%] mx-auto">
           <p className=" text-brand-header text-lg lg:text-2xl font-semibold">CAREERS</p>
-          <h1 className=" text-xl lg:text-4xl font-semibold">Become a member of our dynamic team</h1>
+          <h1 className=" text-xl lg:text-4xl font-semibold">
+            Become a member of our dynamic team
+          </h1>
           <p className=" text-sm font-light leading-6">
             We welcome everyone who is compassionate and is willing to be a part of a team that
             makes a difference in healthcare.{' '}

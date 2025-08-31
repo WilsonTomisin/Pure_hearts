@@ -7,13 +7,13 @@ import { IoMdInformationCircleOutline } from 'react-icons/io'
 function App() {
 
   const { isTabletandMobile } = useWindowSize()
-  if (isTabletandMobile) {
-    return (
-      <section className=" h-screen flex items-center justify-center">
-        <div className=' flex items-center gap-2 text-blue-500'><IoMdInformationCircleOutline/> Open App on your laptop or desktop</div>
-      </section>
-    )
-  }
+  // if (isTabletandMobile) {
+  //   return (
+  //     <section className=" h-screen flex items-center justify-center">
+  //       <div className=' flex items-center gap-2 text-blue-500'><IoMdInformationCircleOutline/> Open App on your laptop or desktop</div>
+  //     </section>
+  //   )
+  // }
 
   // return (
   //   <section className=" h-screen flex items-center justify-center">

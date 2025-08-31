@@ -141,7 +141,7 @@ const ApplicationForm = () => {
     <div className=" max-w-[1000px] mx-auto bg-brand-header/10 rounded-2xl p-7">
       <h1 className=" mb-3 text-brand-header text-3xl header-font font-bold">Personal Details</h1>
       <form action="" className=" space-y-10">
-        <section className="  grid grid-cols-2 gap-10 items-center justify-between">
+        <section className="  grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-between">
           <div>
             <label htmlFor="" className=" font-semibold text-gray-400 block">
               First name
@@ -150,7 +150,7 @@ const ApplicationForm = () => {
               type="text"
               name='first_name'
               onChange={handleChange}
-              className={`  ${errors?.first_name ? ' border border-red-500' : ''} shadow-xl focus:shadow-blue-300 w-full bg-white p-5 rounded-2xl`}
+              className={`  ${errors?.first_name ? ' border border-red-500' : ''}  shadow-xl focus:shadow-blue-300 w-full bg-white p-5 rounded-2xl`}
             />
             {errors?.first_name && (
               <span className=" text-xs text-red-500 font-light">{errors.first_name}</span>
@@ -172,7 +172,7 @@ const ApplicationForm = () => {
           </div>
         </section>
 
-        <section className=" grid grid-cols-2 gap-10  items-center justify-between">
+        <section className=" grid grid-cols-1 md:grid-cols-2 gap-4  items-center justify-between">
           <div>
             <label htmlFor="" className=" font-semibold block text-gray-400">
               Date of Birth
@@ -225,7 +225,7 @@ const ApplicationForm = () => {
           </div>
         </section>
 
-        <section className=" grid grid-cols-2 gap-10  items-center justify-between">
+        <section className=" grid grid-cols-1 md:grid-cols-2 gap-4 items-center justify-between">
           <div>
             <label className=" font-semibold block text-gray-400" htmlFor="">
               Phone number
@@ -256,7 +256,7 @@ const ApplicationForm = () => {
           </div>
         </section>
 
-        <section className=" grid grid-cols-2 gap-10  items-center justify-between">
+        <section className=" grid grid-cols-1 md:grid-cols-2 gap-4  items-center justify-between">
           <div>
             <label className=" font-semibold block text-gray-400" htmlFor="">
               Job role
@@ -296,10 +296,10 @@ const ApplicationForm = () => {
           <button
             onClick={handleSubmit}
             disabled ={isSubmitting}
-            className=" disabled:bg-gray-200 disabled:text-black text-white bg-brand-colour-primary py-3 px-16 rounded-2xl"
+            className=" disabled:bg-gray-200 disabled:text-black text-white bg-brand-colour-primary py-3 px-16 rounded-2xl w-full"
           >
             {' '}
-            { !isSubmitting ? <span className=' flex items-center gap-1'> <ArrowBigUpDash className=' animate-bounce'/> sending...</span> : 'send'}
+            { isSubmitting ? <span className=' flex items-center gap-1'> <ArrowBigUpDash className=' animate-bounce'/> sending...</span> : 'send'}
           </button>
         </div>
       </form>

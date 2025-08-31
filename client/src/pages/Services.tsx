@@ -7,7 +7,8 @@ import serviceimg5 from '../assets/image 13.png'
 const Services = () => {
   return (
     <div className=" p-7">
-      <section className=" grid grid-cols-2 gap-5 justify-between my-22">
+      <h1 className=' text-brand-header text-3xl font-bold text-center'>Our Services</h1>
+      <section className=" grid grid-cols-1 md:grid-cols-2 gap-5 justify-between my-22">
         <div className="">
           <h3 className=" service-header">Domiciliary care </h3>
           <p className=" text-paragraph-text font-light">
@@ -25,8 +26,8 @@ const Services = () => {
         </div>
       </section>
 
-      <section className=" grid grid-cols-2 gap-5 justify-between my-22">
-        <div className="">
+      <section className=" flex flex-col-reverse md:flex-row gap-5 justify-between my-22">
+        <div className=" md:w-[850px]">
           <img
             src={serviceimg2}
             alt="image 1"
@@ -42,7 +43,7 @@ const Services = () => {
         </div>
       </section>
 
-      <section className=" grid grid-cols-2 gap-5 justify-between my-22">
+      <section className=" grid grid-cols-1 md:grid-cols-2 gap-5 justify-between my-22">
         <div className="">
           <h3 className=" service-header"> Specialized Care </h3>
           <p className=" text-paragraph-text font-light">
@@ -60,7 +61,7 @@ const Services = () => {
         </div>
       </section>
 
-      <section className=" grid grid-cols-2 gap-5 justify-between my-22">
+      <section className=" flex flex-col-reverse md:flex-row gap-5 justify-between my-22">
         <div className="">
           <img
             src={serviceimg4}
@@ -79,7 +80,7 @@ const Services = () => {
         </div>
       </section>
 
-      <section className=" grid grid-cols-2 gap-5 justify-between my-22">
+      <section className=" grid grid-cols-1 md:grid-cols-2 gap-5 justify-between my-22">
         <div className="">
           <h3 className=" service-header"> Health care staffing solution </h3>
           <p className=" text-paragraph-text font-light">
@@ -99,7 +100,7 @@ const Services = () => {
         </div>
       </section>
 
-      <section className=" grid grid-cols-2 gap-5 justify-between my-22">
+      <section className=" flex flex-col-reverse md:flex-row gap-5 justify-between my-22">
         <div className="">
           <img src={serviceimg1} alt="image 1" />
         </div>
@@ -115,7 +116,7 @@ const Services = () => {
 
       <h1 className=" text-center service-header my-7 text-4xl">How to access our Support</h1>
 
-      <div className=" grid grid-cols-3 gap-5 items-center justify-between mb-7">
+      <div className=" grid grid-cols-1 md:grid-cols-3 gap-5 items-center justify-between mb-7">
         <div className=" p-7 shadow-lg rounded-lg h-[250px]">
           <div className=" flex justify-center bg-brand-colour-primary p-5 rounded-full w-28 mx-auto">
             {' '}
@@ -141,7 +142,7 @@ const Services = () => {
           <span> Your personalised care package</span>
         </div>
       </div>
-      <div className=" grid grid-cols-3 gap-5 items-center justify-between mb-7">
+      <div className=" hidden lg:grid grid-cols-3 gap-5 items-center justify-between mb-7">
         <p>
           You are welcome to contact one of our trained professionals. You are our priority and we
           ain to respond as soon as possible.

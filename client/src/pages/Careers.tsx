@@ -7,9 +7,9 @@ import { useNavigate } from 'react-router-dom';
 const Careers = () => {
     const navigate = useNavigate()
   return (
-    <div className=" px-10">
-      <header className=" text-center w-3/4 my-5 mx-auto">
-        <h1 className=" text-brand-header text-5xl header-font font-bold">
+    <div className=" px-4 lg:px-10">
+      <header className=" text-center w-full md:w-3/4 my-5 mx-auto">
+        <h1 className=" text-brand-header text-2xl lg:text-5xl header-font font-bold">
           Become a member of our dynamic team
         </h1>
         <p>
@@ -18,7 +18,7 @@ const Careers = () => {
         </p>
       </header>
 
-      <section className=" flex items-center justify-between">
+      <section className=" flex flex-col-reverse md:flex-row items-center justify-between">
         <img src={img} alt=" caring for someone" className=" h-[600px] w-[600px]" />
         <div>
           <p>
@@ -34,7 +34,7 @@ const Careers = () => {
         </div>
       </section>
 
-      <section className=" flex items-center justify-between">
+      <section className=" flex flex-col md:flex-row items-center justify-between">
         <div>
           <p>
             we are committed to raising the standard of care and support within the disability and
@@ -51,7 +51,7 @@ const Careers = () => {
         <img src={img2} alt=" caring for someone" className=" h-[600px] w-[600px]" />
       </section>
 
-      <section className=" flex items-center justify-between">
+      <section className=" flex flex-col-reverse md:flex-row items-center justify-between">
         <img src={img3} alt=" caring for someone" className=" h-[600px] w-[600px]" />
         <div>
           {' '}

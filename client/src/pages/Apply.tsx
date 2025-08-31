@@ -3,13 +3,13 @@ import ApplicationForm from '../components/ApplicationForm'
 
 const Apply = () => {
   return (
-    <main className=" px-10">
-      <header className=" text-center w-[80%] my-5 mx-auto">
-        <h1 className=" mb-5 text-brand-header text-5xl header-font font-bold">
+    <main className=" px-4 lg:px-10">
+      <header className=" text-center w-full md:w-[80%] my-5 mx-auto">
+        <h1 className=" mb-5 text-brand-header text-3xl lg:text-5xl header-font font-bold">
           Application Form{' '}
         </h1>
         <p>
-          <h3 className=" mb-3 text-brand-header text-2xl header-font font-bold">
+          <h3 className=" mb-3 text-brand-header text-lg lg:text-2xl header-font font-bold">
             You are just few steps away from becoming a part of a team that makes a difference in
             the car sector
           </h3>
