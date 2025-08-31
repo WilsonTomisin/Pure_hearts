@@ -39,8 +39,8 @@ const FaqsContent = () => {
   return (
     <Accordion type="single" collapsible>
       {faqsContent.map((content, idx) => (
-        <AccordionItem value={content.answer} key={idx} className=' py-7'>
-              <AccordionTrigger className='  text-3xl header-font'>{ content.question }</AccordionTrigger>
+        <AccordionItem value={content.answer} key={idx} className=' py-2 lg:py-7'>
+              <AccordionTrigger className=' text-base  lg:text-3xl header-font'>{ content.question }</AccordionTrigger>
               <AccordionContent>{ content.answer }</AccordionContent>
         </AccordionItem>
       ))}

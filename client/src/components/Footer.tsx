@@ -12,13 +12,13 @@ const Footer = () => {
           <img src={footerimg} alt=" footer image" />
         </div>
         <footer className=" bg-[#1A89D2] p-10">
-          <main className=" grid grid-cols-4 justify-center gap-10">
+          <main className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-10">
             <img src={logo} alt="pure hearts logo" className=" h-20 w-48" />
             <h4 className=" text-brand-colour-primary text-xl ">OPENING HOURS</h4>
             <h4 className=" text-brand-colour-primary text-xl ">ADDRESS</h4>
             <h4 className=" text-brand-colour-primary text-xl ">CONTACT US</h4>
           </main>
-          <main className=" grid grid-cols-4 justify-between gap-10">
+          <main className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-10">
             {' '}
             <div>
               <p className=" text-white">

@@ -58,7 +58,7 @@ const TeamSlider = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex  justify-between ">
-      <div className=" max-w-[1500px] w-full grid lg:grid-cols-2 gap-12 items-center">
+      <div className=" max-w-[1500px] w-full flex flex-col-reverse lg:flex-row gap-12 items-center">
         {/* Content Section */}
         <motion.div
           className="space-y-6 p-8"
@@ -69,9 +69,7 @@ const TeamSlider = () => {
           <div className="space-y-2">
             <h1 className="text-5xl font-bold text-gray-900 leading-tight">
               Meet
-              <br />
               the
-              <br />
               Team
             </h1>
           </div>
@@ -85,14 +83,6 @@ const TeamSlider = () => {
             //   transition={{ duration: 0.5 }}
               className="space-y-4"
             >
-              {/* <p className="text-gray-600 text-lg leading-relaxed max-w-md">
-                {getCurrentMember().description}
-              </p>
-
-              <div className="space-y-1">
-                <h3 className="text-2xl font-semibold text-gray-900">{getCurrentMember().name}</h3>
-                <p className="text-blue-600 font-medium">{getCurrentMember().role}</p>
-              </div> */}
               <p>
                 Pure Hearts Solutions boasts a dedicated team of compassionate healthcare
                 professionals, including support workers, nurses, and specialists. Committed to
@@ -151,7 +141,7 @@ const TeamSlider = () => {
                   key={index}
                   onClick={() => !isAnimating && setCurrentIndex(index)}
                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    index === currentIndex ? 'bg-blue-600 w-8' : 'bg-gray-300 hover:bg-gray-400'
+                    index === currentIndex ? 'bg-brand-colour-primary w-8' : 'bg-gray-300 hover:bg-gray-400'
                   }`}
                 />
               ))}

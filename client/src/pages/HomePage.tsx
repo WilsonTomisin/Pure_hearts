@@ -2,15 +2,13 @@ import { CopyPlus, History, MoveRight, User } from 'lucide-react'
 import image1 from '../assets/TJQVMX3 (2).png';
 import image2 from '../assets/video.png'
 import { servicesCardInfo } from '../utils/constants';
-import teamMember3 from "../assets/WhatsApp Image 2025-07-22 at 13.56.03_c8d6587f.jpg"
-import teamMember2 from "../assets/WhatsApp Image 2025-07-22 at 13.56.03_e4a3a4bf.jpg";
-import teamMember1 from "../assets/WhatsApp Image 2025-07-22 at 13.56.04_26bcf26f.jpg";
 import domicillarycare from "../assets/card-highlight (1).png";
 import domicillarycare2 from "../assets/image (2).png";
 import domicillarycare3 from "../assets/image (3).png";
 import { FaStar } from 'react-icons/fa6'
 import Carousel from '../components/Carousel';
 import { useNavigate } from 'react-router-dom';
+import AboutTeam from '../components/AboutTeam';
 
 
 
@@ -22,7 +20,7 @@ const HomePage = () => {
       <section className="">
         <Carousel />
       </section>
-      <section className=" bg-slate-50 h-[400px] py-7  px-10 grid grid-cols-3 gap-5">
+      <section className=" bg-slate-50 h-[400px] py-7 px-5 md:px-10 grid grid-cols-1 lg:grid-cols-3 gap-5">
         <div className=" flex items-center gap-2 shadow-md shadow-brand-colour-primary bg-brand-header/30 hover:bg-[#1A89D2] ease-in-out duration-500 transition-all p-4 rounded-2xl">
           <span className=" p-1 bg-brand-colour-primary/30  rounded-full">
             {' '}
@@ -53,12 +51,12 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className=" grid grid-cols-2 items-center justify-between gap-10 px-10 py-7">
-        <div className=" flex items-center gap-5 w-1/2">
-          <img src={image1} alt="" className=" w-fit" />
-          <img src={image2} alt="" />
+      <section className=" flex flex-col-reverse lg:flex-row items-center justify-between gap-10 px-5 md:px-10 py-7">
+        <div className=" flex flex-col md:flex-row items-center gap-5 lg:max-w-1/2">
+          <img src={image1} alt="" className=" w-[300px] h-[400px]" />
+          <img src={image2} alt="" className=" w-[300px] h-[400px]" />
         </div>
-        <div className="">
+        <div className=" lg:max-w-1/2">
           <p className=" text-2xl font-medium text-brand-colour-primary">ABOUT US</p>
           <h2 className="text-4xl font-semibold mb-4">
             {' '}
@@ -95,8 +93,8 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className=" py-7 px-10 space-y-14">
-        <main className=" text-center  w-[80%] mx-auto">
+      <section className=" py-7 px-5 lg:px-10 space-y-14">
+        <main className=" text-center w-full  lg:w-[80%] mx-auto">
           <p className=" text-brand-header text-2xl font-semibold">WHY CHOOSE US</p>
           <h1 className=" text-4xl font-semibold">As a team we care about your welbeing</h1>
           <p className=" text-sm font-light leading-6">
@@ -110,7 +108,7 @@ const HomePage = () => {
             to provide exceptional care.
           </p>
         </main>
-        <section className="  grid grid-cols-2">
+        <section className="  grid grid-cols-1 md:grid-cols-2">
           <div className=" bg-[#1A89D2] rounded-tl-2xl flex items-center gap-5 justify-between p-8">
             <span className=" font-bold text-xl text-white">01</span>
             <div>
@@ -155,15 +153,15 @@ const HomePage = () => {
         </section>
       </section>
 
-      <section className=" px-10 py-7 space-y-5  ">
+      <section className=" px-5 lg:px-10 py-7 space-y-5  ">
         <main className=" text-center  w-[80%] mx-auto">
-          <p className=" text-brand-header text-2xl font-semibold"> Our Services</p>
-          <h1 className=" text-4xl font-semibold">Comprehensive Healthcare Solutions</h1>
+          <p className=" text-brand-header text-lg lg:text-2xl font-semibold"> Our Services</p>
+          <h1 className=" text-xl lg:text-4xl font-semibold">Comprehensive Healthcare Solutions</h1>
           <p className=" text-sm font-light leading-6">
             At pure heart solution we are here to provide all your healthcare needs{' '}
           </p>
         </main>
-        <div className=" grid grid-cols-3 gap-5 ">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
           {servicesCardInfo.map((service, idx) => {
             if (idx === servicesCardInfo.length - 1) {
               return (
@@ -211,52 +209,16 @@ const HomePage = () => {
       </section>
 
       <section className=" px-10 py-7 space-y-5">
-        <main className=" text-center  w-[80%] mx-auto">
-          <p className=" text-brand-header text-2xl font-semibold"> Our Team</p>
-          <h1 className=" text-4xl font-semibold">Meet Our Team Members</h1>
+        <main className=" text-center w-full  lg:w-[80%] mx-auto">
+          <p className=" text-brand-header text-lg lg:text-2xl font-semibold"> Our Team</p>
+          <h1 className=" text-xl lg:text-4xl font-semibold">Meet Our Team Members</h1>
           <p className=" text-sm font-light leading-6">
             We have a dynamic and a highly skilled management team{' '}
           </p>
         </main>
 
-        <section className=" grid grid-cols-3 items-center justify-between">
-          <div>
-            <img
-              src={teamMember1}
-              className=" rounded-2xl mx-auto h-[300px] w-[250px] transition-all ease-in-out duration-500 hover:shadow-lg hover:shadow-brand-header"
-              alt=" team member 1"
-            />
-            <div className=" text-center mt-2">
-              <h4 className=" text-xl text-brand-colour-primary font-semibold">Michael Adodo.</h4>
-              <p>Chief Executive Officer. CEO</p>
-            </div>
-          </div>
-          <div>
-            <img
-              src={teamMember2}
-              className=" rounded-2xl mx-auto h-[300px] w-[250px] transition-all ease-in-out duration-500 hover:shadow-lg hover:shadow-brand-header"
-              alt=" team member 2"
-            />{' '}
-            <div className=" text-center mt-2">
-              <h4 className=" text-xl text-brand-colour-primary font-semibold">Johnson Ajuwon</h4>
-              <p>Chief Financial Officer CFO</p>
-            </div>
-          </div>
-          <div>
-            <img
-              src={teamMember3}
-              className=" rounded-2xl mx-auto h-[300px] w-[250px] transition-all ease-in-out duration-500 hover:shadow-lg hover:shadow-brand-header"
-              alt="team member 3"
-            />{' '}
-            <div className=" text-center mt-2">
-              <h4 className=" text-xl text-brand-colour-primary font-semibold">
-                Abubakri Otegbeye
-              </h4>
-              <p>Registered Manager</p>
-            </div>
-          </div>
-        </section>
-        <p className=" my-5">
+       <AboutTeam/>
+        <p className=" lg:my-5">
           <span
             onClick={() => navigate('/meet-the-team')}
             className=" cursor-pointer flex items-center justify-center gap-2 text-brand-colour-primary text-lg"
@@ -267,16 +229,16 @@ const HomePage = () => {
       </section>
 
       <section className=" px-10 py-7 space-y-5">
-        <main className=" text-center  w-[60%] mx-auto">
-          <p className=" text-brand-header text-2xl font-semibold">CAREERS</p>
-          <h1 className=" text-4xl font-semibold">Become a member of our dynamic team</h1>
+        <main className=" text-center w-full  lg:w-[60%] mx-auto">
+          <p className=" text-brand-header text-lg lg:text-2xl font-semibold">CAREERS</p>
+          <h1 className=" text-xl lg:text-4xl font-semibold">Become a member of our dynamic team</h1>
           <p className=" text-sm font-light leading-6">
             We welcome everyone who is compassionate and is willing to be a part of a team that
             makes a difference in healthcare.{' '}
           </p>
         </main>
 
-        <section className=" grid grid-cols-2  justify-between">
+        <section className=" hidden md:grid grid-cols-1 lg:grid-cols-2  justify-between">
           <div>
             <img src={domicillarycare} className=" h-full  " alt=" " />
           </div>
@@ -300,12 +262,12 @@ const HomePage = () => {
       </section>
 
       <section className=" px-10 py-7 bg-[#1A89D2] space-y-5">
-        <h1 className=" text-4xl text-center font-semibold text-white header-font ">
+        <h1 className=" text-2xl lg:text-4xl text-center font-semibold text-white header-font ">
           Customer Reviews
         </h1>
 
-        <section className=" grid grid-cols-3 gap-5 justify-between">
-          <div className=" h-[450px] flex flex-col justify-between bg-white  p-7 rounded-2xl">
+        <section className=" grid grid-cols-1 md:grid-cols-3 gap-5 justify-between">
+          <div className=" h-auto lg:h-[450px] flex flex-col justify-between bg-white  p-7 rounded-2xl">
             <p className=" text-[#1A89D2] font-bold">
               The service I received was thoroughly impressive. The staff was friendly and
               attentive, making me feel valued. The providers took the time to address all my
@@ -318,7 +280,7 @@ const HomePage = () => {
               ))}
             </span>{' '}
           </div>
-          <div className=" h-[450px]  flex flex-col justify-between bg-white  p-7 rounded-2xl">
+          <div className=" h-auto lg:h-[450px]  flex flex-col justify-between bg-white  p-7 rounded-2xl">
             <p className=" text-[#1A89D2] font-bold">
               Pure Hearts Solutions has been a game-changer for our care facility. The caregivers
               they provide not only excel in professionalism and skills but also bring genuine
@@ -333,7 +295,7 @@ const HomePage = () => {
               ))}
             </span>{' '}
           </div>
-          <div className=" h-[450px]  flex flex-col justify-between bg-gradient-to-bl from-white via-brand-colour-primary to-accent-foreground p-7 rounded-2xl">
+          <div className=" h-auto lg:h-[450px]  flex flex-col justify-between bg-gradient-to-bl from-white via-brand-colour-primary to-accent-foreground p-7 rounded-2xl">
             <p className=" text-[#1A89D2] font-bold">
               I am so impressed by their professionalism . Communication was so prompt and I was
               attended to with ease. I will definitely recommend their service

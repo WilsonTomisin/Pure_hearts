@@ -64,9 +64,9 @@ const Carousel = () => {
   }
 
   return (
-    <div className="relative w-full -top-40  mx-auto bg-black rounded-2xl overflow-hidden shadow-2xl">
+    <div className="relative w-full -top-0 lg:-top-40  mx-auto bg-black rounded-b-2xl md:rounded-2xl overflow-hidden shadow-2xl">
       {/* Main carousel container */}
-      <div className="relative h-96 md:h-[700px] overflow-hidden">
+      <div className="relative h-[400px] md:h-[700px] overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentIndex}
@@ -96,7 +96,7 @@ const Carousel = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className="text-xl md:text-2xl text-brand-colour-primary font-bold mb-2 leading-tight"
+                className="text-sm md:text-2xl text-brand-colour-primary font-bold mb-2 leading-tight"
               >
                 {images[currentIndex].headerTitle}
               </motion.h4>
@@ -104,7 +104,7 @@ const Carousel = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className={`text-2xl md:text-4xl font-bold mb-2 leading-tight  rounded-2xl `}
+                className={`text-md md:text-4xl font-bold mb-2 leading-tight  rounded-2xl `}
               >
                 {images[currentIndex].title} <span className='text-brand-colour-primary'>Health needs</span>
               </motion.h2>
@@ -113,7 +113,7 @@ const Carousel = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
-                className="text-lg md:text-xl text-gray-200 mb-3 font-medium"
+                className="text-sm md:text-xl text-gray-200 mb-3 font-medium"
               >
                 {images[currentIndex].subtitle}
               </motion.p>
@@ -122,7 +122,7 @@ const Carousel = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
-                className="text-sm md:text-base text-gray-300 font-light max-w-2xl leading-relaxed"
+                className="text-xs md:text-base text-gray-300 font-light max-w-2xl leading-relaxed"
               >
                 {images[currentIndex].description}
               </motion.p>

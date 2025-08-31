@@ -11,7 +11,7 @@ import serviceFooterimg from '../assets/Group 16.png'
 
 const Aboutus = () => {
   return (
-    <section className=" px-10">
+    <section className=" px-5 lg:px-10">
       <main className=" grid grid-cols-1 gap-5">
         <div className=" p-7 bg-brand-colour-primary text-white rounded-2xl">
           <h2 className=" text-3xl font-bold mb-4 header-font text-center">ABOUT US</h2>
@@ -33,11 +33,11 @@ const Aboutus = () => {
 
       <div className=" py-10">
         <div className=" text-center">
-          <h2 className=" text-4xl font-bold text-brand-header mb-2">
+          <h2 className=" text-xl lg:text-4xl font-bold text-brand-header mb-2">
             {' '}
             Pure Hearts Solutions, Your Health Our Priority
           </h2>
-          <p>
+          <p className=' text-xs md:text-base'>
             Our focus is on delivering exceptional care within the familiar surroundings of our
             clients' homes. Whether through our domiciliary care services, where our professionals
             bring their expertise directly to clients within their residences, or by offering the
@@ -45,7 +45,7 @@ const Aboutus = () => {
           </p>
         </div>
 
-        <main className=" grid grid-cols-3 gap-4 py-10">
+        <main className=" grid grid-cols-1 lg:grid-cols-3 gap-4 py-10">
           <div className=" grid grid-cols-2 items-center gap-5 bg-brand-header/50 p-5 rounded-2xl text-white shadow-md shadow-brand-colour-primary">
             <div className="  bg-black/10 h-10 w-10 mx-auto rounded-full p-3">
               <img src={card3} alt="" />
@@ -76,7 +76,7 @@ const Aboutus = () => {
         </main>
       </div>
 
-      <div className=" py-10 flex items-center justify-between">
+      <div className=" py-10 flex flex-col md:flex-row items-center justify-between">
         <p>
           Rooted in compassion, excellence, and flexibility, our approach is centred on delivering
           high-quality healthcare solutions. With a commitment to adaptability, innovation, and a
@@ -95,8 +95,8 @@ const Aboutus = () => {
         </p>
       </div>
 
-      <div className=" py-7 rounded-2xl my-7 bg-brand-colour-primary italic px-5 grid grid-cols-2 gap-5 items-center justify-between">
-        <div className=" flex items-center gap-4">
+      <div className=" py-7 rounded-2xl my-7 bg-brand-colour-primary italic px-5 grid grid-cols-1 lg:grid-cols-2 gap-5 items-center justify-between">
+        <div className=" flex flex-col md:flex-row items-center gap-4">
           <img src={coreImg1} alt=" placeholder" />
           <div className=" text-white">
             <h4 className=" text-brand-header text-3xl font-semibold ">QUALITY</h4>
@@ -107,7 +107,7 @@ const Aboutus = () => {
           </div>
         </div>
 
-        <div className=" flex items-center gap-4 text-white">
+        <div className=" flex flex-col md:flex-row  items-center gap-4 text-white">
           <img src={coreImg2} alt=" placeholder " />
           <div>
             <h4 className=" text-brand-header text-3xl font-semibold ">COMMITMENT</h4>
@@ -118,7 +118,7 @@ const Aboutus = () => {
           </div>
         </div>
 
-        <div className=" flex items-center gap-4 text-white">
+        <div className=" flex flex-col md:flex-row  items-center gap-4 text-white">
           <img src={coreImg3} alt=" placeholder" />
           <div>
             <h4 className=" text-brand-header text-3xl font-semibold ">PERFORMANCE</h4>
@@ -129,7 +129,7 @@ const Aboutus = () => {
           </div>
         </div>
 
-        <div className=" flex items-center gap-4 text-white">
+        <div className=" flex flex-col md:flex-row  items-center gap-4 text-white">
           <img src={coreImg4} alt=" placeholder" />
           <div>
             <h4 className=" text-brand-header text-3xl font-semibold ">SAFETY</h4>
@@ -140,8 +140,6 @@ const Aboutus = () => {
           </div>
         </div>
       </div>
-
- 
     </section>
   )
 }

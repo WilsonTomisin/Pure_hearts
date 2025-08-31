@@ -15,18 +15,18 @@ function App() {
     )
   }
 
-  return (
-    <section className=" h-screen flex items-center justify-center">
-      <div className=" flex items-center gap-2 text-red-500">
-        <IoMdInformationCircleOutline /> Not available.
-      </div>
-    </section>
-  )
   // return (
-  //   <>
-  //   <RouterProvider router={MyRouter}/>
-  //   </>
+  //   <section className=" h-screen flex items-center justify-center">
+  //     <div className=" flex items-center gap-2 text-red-500">
+  //       <IoMdInformationCircleOutline /> Not available.
+  //     </div>
+  //   </section>
   // )
+  return (
+    <>
+    <RouterProvider router={MyRouter}/>
+    </>
+  )
 }
 
 export default App
